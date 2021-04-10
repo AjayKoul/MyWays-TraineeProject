@@ -9,7 +9,6 @@ const CourseCard = ({ProductId}) => {
     const [state,dispatch] = useDataLayerValue();
     const [isExpanded,setIsExpanded] = useState(false);
     const courseDetails=state.filter(course=>course.ProductId===ProductId);
-    console.log(courseDetails);
      const ProviderTagColors={Coursera:'#1b86a9',Edureka:'#147392',Udemy:'#6d8e47'};
     return (
         <>

@@ -48,7 +48,6 @@ export const initialState =[{
 }]
 
 export const reducer = (state,action)=>{
-    console.log(action.data)
     switch(action.type){
         case 'SET_DATA':
             return [...action.data]

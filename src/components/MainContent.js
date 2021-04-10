@@ -16,11 +16,9 @@ const MainContent = ({filter,sortValue,search}) => {
         )
     }
         if(sortValue.price){
-            console.log('hhhh')
             sortPrice()
         }
         if(sortValue.trending){
-            console.log('ttt')
             sortTrending()
         }
         

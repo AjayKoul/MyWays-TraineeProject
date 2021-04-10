@@ -7,10 +7,8 @@ import Switch from '@material-ui/core/Switch';
 const SideBar = ({filter,setFilter,sortValue,setSortValue,setSearch}) => {
     const [state,dispatch] = useDataLayerValue();
     const uniqueProviders = [...new Set(state.map((item,index) => item.Provider))];
-    console.log(uniqueProviders[0])
 
     const handleChange=(e)=>{
-        console.log(e.target.value)
         if(e.target.checked){
             setFilter([...filter,e.target.value]);
             
